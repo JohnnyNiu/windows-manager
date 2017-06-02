@@ -7,4 +7,9 @@ Tweak history of Elementary OS
  ```
 PS: when using gsettings to set key bindings it need extra quotes and in array. eg. ["'<Alt>F8'"] 
 
-2. 
+2. add slack to custom key binding in system settings
+``` wmctrl -a slack || slack```
+
+3. Setting rotate terminator to super+t in keyboard settings:
+
+```/home/johnnyniu/dev/projects/windows-manager/rotate.py terminator >> /home/johnnyniu/debug.txt```
