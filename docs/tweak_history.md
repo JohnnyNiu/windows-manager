@@ -7,4 +7,7 @@ Tweak history of Elementary OS
  ```
 PS: when using gsettings to set key bindings it need extra quotes and in array. eg. ["'<Alt>F8'"] 
 
-2. 
+2. add slack to custom key binding in system settings
+``` wmctrl -a slack || slack```
+
+3. todo by script : rotate intelliJ
