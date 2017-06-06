@@ -4,6 +4,15 @@ import os.path
 import string
 import subprocess
 import sys
+import logging
+
+logger = logging.getLogger('windows-manager')
+hdlr = logging.FileHandler('/var/tmp/windows-manager.log')
+formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+hdlr.setFormatter(formatter)
+logger.addHandler(hdlr)
+logger.setLevel(logging.DEBUG)
+
 
 TO_ROTOATE_STR=sys.argv[1]
 
