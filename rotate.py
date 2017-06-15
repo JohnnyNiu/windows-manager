@@ -83,7 +83,13 @@ def get_rotate_to_win_id():
             if(last_alive_wid == ''):
                 next_win_id = to_rotate_win_ids[0]
             else:
-                next_win_id = last_alive_wid
+                if(last_alive_wid in to_rotate_win_ids):
+                    next_win_id = last_alive_wid
+                else:
+                    next_win_id = to_rotate_win_ids[0]
+
+    elif len(to_rotate_win_ids) == 1:
+        next_win_id = to_rotate_win_ids[0]
 
 get_rotate_to_win_id()
 
